@@ -1,8 +1,6 @@
 const fs = require("fs/promises");
 const path = require("path");
-const { customAlphabet } = require("nanoid");
-const alphabet = "0123456789";
-const nanoid = customAlphabet(alphabet, 3);
+const { nanoid } = require("nanoid");
 
 const contactsPath = path.join(__dirname, "db/contacts.json");
 
